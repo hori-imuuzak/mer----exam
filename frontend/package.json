@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon server/index.ts",
+    "build": "next build && tsc --project tsconfig.server.json",
+    "start": "NODE_ENV=production node .next/production-server/index.js",
+    "prettier": "prettier --write 'src/**/*' 'pages/**/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-rec/7b98edefc7a7eeed846e41b874980cfd97e3acde.git"
+  },
+  "author": "hori-imuuzak",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/m-rec/7b98edefc7a7eeed846e41b874980cfd97e3acde/issues"
+  },
+  "homepage": "https://github.com/m-rec/7b98edefc7a7eeed846e41b874980cfd97e3acde#readme",
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.3",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@types/next": "^7.0.1",
+    "@types/react": "^16.4.16",
+    "@types/react-dom": "^16.0.9",
+    "@zeit/next-typescript": "^1.1.1",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.4",
+    "next": "^7.0.1",
+    "numeral": "^2.0.6",
+    "path-match": "^1.2.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "styled-components": "^3.4.9"
+  }
+}

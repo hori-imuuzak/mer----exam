@@ -1,0 +1,24 @@
+version: "3.3"
+services:
+  api-server:
+    build:
+      context: ./api-server
+    container_name: api-server
+    ports:
+      - '5000:5000'
+    volumes:
+      - $PWD/api-server:/app
+    working_dir: /app
+    command: bundle exec foreman start
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - $PWD/frontend:/app
+      - /app/node_modules
+    working_dir: /app
+    command: npm run dev
