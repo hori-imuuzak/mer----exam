@@ -1,11 +1,3 @@
-# プロジェクトのダウンロード
-
-```
-git clone https://github.com/m-rec/7b98edefc7a7eeed846e41b874980cfd97e3acde.git
-cd 7b98edefc7a7eeed846e41b874980cfd97e3acde
-git checkout add_exam_code
-```
-
 # 立ち上げ
 
 1. Dockerをインストール
